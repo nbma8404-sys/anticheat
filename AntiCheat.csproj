@@ -1,11 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <AssemblyName>AntiCheat</AssemblyName>
     <Nullable>disable</Nullable>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="TShock" Version="5.2.0" />
+    <!-- TShock 6.x is for Terraria 1.4.5.x -->
+    <PackageReference Include="TShock" Version="6.*" />
   </ItemGroup>
 </Project>

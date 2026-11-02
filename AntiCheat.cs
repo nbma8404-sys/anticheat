@@ -149,7 +149,7 @@ namespace AntiCheat
                         {
                             string name = it.Name;
                             int stack = it.stack;
-                            it.SetDefaults(0);
+                            it.TurnToAir();
                             NetMessage.SendData((int)PacketTypes.PlayerSlot, -1, -1, null, ply.Index, i);
                             Violation(ply, "illegal stack: " + stack + " x " + name, Level.Hard);
                         }
